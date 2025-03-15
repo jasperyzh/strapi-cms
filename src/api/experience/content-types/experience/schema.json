@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "experience",
+  "info": {
+    "singularName": "experience",
+    "pluralName": "experiences",
+    "displayName": "Experience Section",
+    "description": "Experience section content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "sections.testimonial",
+      "repeatable": true
+    }
+  }
+}

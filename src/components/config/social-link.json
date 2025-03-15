@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_config_social_links",
+  "info": {
+    "displayName": "Social Link",
+    "icon": "puzzle-piece"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

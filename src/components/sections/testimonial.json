@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_testimonials",
+  "info": {
+    "displayName": "Testimonial",
+    "icon": "puzzle-piece"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

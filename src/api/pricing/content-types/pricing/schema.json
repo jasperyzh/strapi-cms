@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricing",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing Section",
+    "description": "Pricing section content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "plans": {
+      "type": "component",
+      "component": "sections.plan",
+      "repeatable": true
+    }
+  }
+}

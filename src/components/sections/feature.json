@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "puzzle-piece"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: strapi-cms
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /_health
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_CLIENT
+        value: sqlite
+      - key: DATABASE_FILENAME
+        value: .tmp/data.db
+      - key: ADMIN_JWT_SECRET
+        fromDatabase:
+          name: strapi-cms-db
+          key: ADMIN_JWT_SECRET
+      - key: API_TOKEN_SALT
+        fromDatabase:
+          name: strapi-cms-db
+          key: API_TOKEN_SALT
+      - key: APP_KEYS
+        fromDatabase:
+          name: strapi-cms-db
+          key: APP_KEYS
+      - key: TRANSFER_TOKEN_SALT
+        fromDatabase:
+          name: strapi-cms-db
+          key: TRANSFER_TOKEN_SALT
+    disk:
+      name: strapi-data
+      mountPath: /opt/render/project/src/.tmp
+      sizeGB: 1
