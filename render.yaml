@@ -30,6 +30,8 @@ services:
         fromDatabase:
           name: strapi-cms-db
           key: TRANSFER_TOKEN_SALT
+      - key: JWT_SECRET
+        value: kfcTfYoTBFI2YjkVpEtTng==
     disk:
       name: strapi-data
       mountPath: /opt/render/project/src/.tmp
